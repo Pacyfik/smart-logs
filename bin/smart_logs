@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+require_relative '../lib/log_parser'
+
+log_path = ARGV[0]
+abort("Please specify a log path") if log_path.nil?
+LogParser.parse(log_path)
